@@ -50,11 +50,12 @@ function increment(idx){
 }
 
 function decrement(idx){
+  if(ar.key2 !== 0){
   addarr((prevar) => {
     const updatedarr = [...prevar];
     updatedarr[idx] = {...updatedarr[idx], key2: parseInt(updatedarr[idx].key2) - 1};
     return updatedarr;
-  })
+  }) }
 }
 
   return (
